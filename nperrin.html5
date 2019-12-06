@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+
+<title>$title$</title>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="author" content="Norman Perrin" />
+<link rel="canonical" href="https://nperrin.io$url$" />
+<meta name="description" content="$description$" />
+$if(date)$
+<meta name="dcterms.date" content="$date$" />
+$endif$
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#54c99d">
+<meta name="theme-color" content="#fefefe">
+<meta name="apple-mobile-web-app-title" content="nperrin">
+<meta name="msapplication-TileColor" content="#fefefe">
+<meta name="msapplication-TileImage" content="/favicon.png">
+<meta name="application-name" content="nperrin">
+<meta name="og:title" content="$title$" />
+<meta name="og:description" content="$description$" />
+<meta name="og:site_name" content="Norman Perrin" />
+<meta name="og:url" content="https://nperrin.io$url$" />
+<meta name="og:type" content="article" />
+<meta name="og:image" content="https://nperrin.io/img/thumbnail.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@NormanPerrinOK">
+<meta name="twitter:creator" content="@NormanPerrinOK" />
+<meta name="twitter:title" content="$title$" />
+<meta name="twitter:description" content="$description$" />
+<meta name="twitter:url" content="https://nperrin.io$url$" />
+<meta name="twitter:image" content="https://nperrin.io/img/thumbnail.png" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="alternate home" href="https://nperrin.io/feed/index.xml" type="application/rss+xml" hreflang="en" title="Norman Perrin">
+<link rel="stylesheet" href="/css/styles.css" />
+<link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+
+<main>
+	<article class="h-entry">
+		<h1 class="p-name">$title$</h1>
+$if(show-toc)$
+$if(toc-title)$
+		<h2>$toc-title$</h2>
+$endif$
+		<nav id="$idprefix$TOC" role="doc-toc">
+$table-of-contents$
+		</nav>
+$endif$
+		<div class="e-content">
+$body$
+		</div>
+	</article>
+</main>
