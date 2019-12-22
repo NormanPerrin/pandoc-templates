@@ -1,0 +1,34 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>$pagetitle$</title>
+<style>
+    html {
+	    background-color: #fafafa;
+	    line-height: 1.5;
+	    font-size: 16px;
+	    color: #222;
+	    font-family: Palatino, serif;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    h1 { text-align: center; }
+    h2 {
+        width: fit-content;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+    }
+</style>
+
+<h1>$pagetitle$</h1>
+
+$if(toc)$
+<h2>Table of content</h2>
+<nav id="$idprefix$TOC" role="doc-toc">
+$table-of-contents$
+</nav>
+$endif$
+
+$body$
