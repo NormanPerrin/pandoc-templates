@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
-
 <title>$title$</title>
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
@@ -8,9 +7,8 @@
 <meta name="author" content="Norman Perrin" />
 <link rel="canonical" href="https://nperrin.io$url$" />
 <meta name="description" content="$description$" />
-$if(date)$
+<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 <meta name="dcterms.date" content="$date$" />
-$endif$
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -36,12 +34,42 @@ $endif$
 <meta name="twitter:image" content="https://nperrin.io/img/thumbnail.png" />
 <link rel="icon" type="image/png" href="/favicon.png" />
 <link rel="alternate home" href="https://nperrin.io/feed/index.xml" type="application/rss+xml" hreflang="en" title="Norman Perrin">
-<link rel="stylesheet" href="/css/styles.css" />
+$for(css)$
+<link rel="stylesheet" href="$css$" />
+$endfor$
 <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+
+<aside>
+    <h2><a href="/">nperrin</a></h2>
+    <nav>
+    </nav>
+    <section class="h-card p-author hcard vcard">
+		<img rel="me" class="u-photo" alt="Norman Perrin blurred" src="/img/me.jpeg">
+        <p>
+		    <span>Name:</span>
+	    	<a class="p-name u-url" rel="me" href="https://nperrin.io/">Norman Perrin</a>
+        </p>
+        <p>
+	    	<span>Twitter:</span>
+    		<a class="u-url" rel="me" href="https://twitter.com/normanperrinok">@NormanPerrinOK</a>
+        </p>
+        <p>
+    		<span>Github:</span>
+    		<a class="u-url" rel="me" href="https://github.com/normanperrin">normanperrin</a>
+        </p>
+        <p>
+    		<span>PGP Key:</span>
+    		<a rel="pgpkey authn" href="/nperrin.asc" class="u-key">0xDD6DD4CB21147E87</a>
+        </p>
+	</section>
+</aside>
 
 <main>
 	<article class="h-entry">
-		<h1 class="p-name">$title$</h1>
+        <header>
+		    <h1 class="p-name">$title$</h1>
+            <p class="date">$date$</p>
+        </header>
 $if(show-toc)$
 $if(toc-title)$
 		<h2>$toc-title$</h2>
