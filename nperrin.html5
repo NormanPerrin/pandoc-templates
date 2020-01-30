@@ -5,7 +5,7 @@
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <meta name="author" content="Norman Perrin" />
-<link rel="canonical" href="https://nperrin.io$url$" />
+<link rel="canonical" href="https://nperrin.io/$url$" />
 <meta name="description" content="$description$" />
 <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 <meta name="dcterms.date" content="$date$" />
@@ -22,7 +22,7 @@
 <meta name="og:title" content="$title$" />
 <meta name="og:description" content="$description$" />
 <meta name="og:site_name" content="Norman Perrin" />
-<meta name="og:url" content="https://nperrin.io$url$" />
+<meta name="og:url" content="https://nperrin.io/$url$" />
 <meta name="og:type" content="article" />
 <meta name="og:image" content="https://nperrin.io/img/thumbnail.png" />
 <meta name="twitter:card" content="summary" />
@@ -30,39 +30,22 @@
 <meta name="twitter:creator" content="@NormanPerrinOK" />
 <meta name="twitter:title" content="$title$" />
 <meta name="twitter:description" content="$description$" />
-<meta name="twitter:url" content="https://nperrin.io$url$" />
+<meta name="twitter:url" content="https://nperrin.io/$url$" />
 <meta name="twitter:image" content="https://nperrin.io/img/thumbnail.png" />
 <link rel="icon" type="image/png" href="/favicon.png" />
-<link rel="alternate home" href="https://nperrin.io/feed/index.xml" type="application/rss+xml" hreflang="en" title="Norman Perrin">
-$for(css)$
-<link rel="stylesheet" href="$css$" />
-$endfor$
-<link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+<link rel="alternate" href="https://nperrin.io/$feed_url$" type="application/rss+xml" hreflang="$feed_lang$" title="Norman Perrin $feed_title$">
+<link rel="stylesheet" href="/css/styles.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eczar&display=swap">
 
-<aside>
-    <h2><a href="/">nperrin</a></h2>
+<header>
     <nav>
+        <ul>
+            <li><a href="/index.html" rel="home">Home</a></li>
+            <li><a href="/posts/index.html">Posts</a></li>
+            <li><a href="/notes/index.html">Notes</a></li>
+        </ul>
     </nav>
-    <section class="h-card p-author hcard vcard">
-		<img rel="me" class="u-photo" alt="Norman Perrin blurred" src="/img/me.jpeg">
-        <p>
-		    <span>Name:</span>
-	    	<a class="p-name u-url" rel="me" href="https://nperrin.io/">Norman Perrin</a>
-        </p>
-        <p>
-	    	<span>Twitter:</span>
-    		<a class="u-url" rel="me" href="https://twitter.com/normanperrinok">@NormanPerrinOK</a>
-        </p>
-        <p>
-    		<span>Github:</span>
-    		<a class="u-url" rel="me" href="https://github.com/normanperrin">normanperrin</a>
-        </p>
-        <p>
-    		<span>PGP Key:</span>
-    		<a rel="pgpkey authn" href="/nperrin.asc" class="u-key">0xDD6DD4CB21147E87</a>
-        </p>
-	</section>
-</aside>
+</header>
 
 <main>
 	<article class="h-entry">
@@ -83,3 +66,27 @@ $body$
 		</div>
 	</article>
 </main>
+
+<footer>
+    <section class="h-card p-author hcard vcard">
+		<img rel="me" class="u-photo" alt="Norman Perrin blurred" src="/img/me.jpeg">
+        <div>
+	        <p>
+			    <span>Name:</span>
+		    	<a class="p-name u-url" rel="me home" href="https://nperrin.io">Norman Perrin</a>
+	        </p>
+	        <p>
+		    	<span>Twitter:</span>
+	    		<a class="u-url" rel="me" href="https://twitter.com/normanperrinok">@NormanPerrinOK</a>
+	        </p>
+	        <p>
+	    		<span>Github:</span>
+	    		<a class="u-url" rel="me" href="https://github.com/normanperrin">normanperrin</a>
+	        </p>
+	        <p>
+	    		<span>PGP Key:</span>
+	    		<a rel="pgpkey authn" href="/nperrin.asc" class="u-key">0xDD6DD4CB21147E87</a>
+	        </p>
+        </div>
+	</section>
+</footer>
