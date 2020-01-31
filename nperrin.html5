@@ -51,7 +51,8 @@
 	<article class="h-entry">
         <header>
 		    <h1 class="p-name">$title$</h1>
-            <p class="date">$date$</p>
+            <p class="p-summary"><em>$description$</em></p>
+            <p>Published: <b><time class="dt-published" datetime="$date$">$show_date$</time></b></p>
         </header>
 $if(show-toc)$
 $if(toc-title)$
