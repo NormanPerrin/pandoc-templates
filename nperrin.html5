@@ -54,14 +54,16 @@
             <p class="p-summary"><em>$description$</em></p>
             <p>Published: <b><time class="dt-published" datetime="$date$">$show_date$</time></b></p>
         </header>
-$if(show-toc)$
+
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
 $if(toc-title)$
-		<h2>$toc-title$</h2>
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
 $endif$
-		<nav id="$idprefix$TOC" role="doc-toc">
 $table-of-contents$
-		</nav>
+</nav>
 $endif$
+
 		<div class="e-content">
 $body$
 		</div>
